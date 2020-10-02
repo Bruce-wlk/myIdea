@@ -7,4 +7,7 @@ public class test1 {
         System.out.println("Hello my git");
         System.out.println("Hello my git");
     }
+    public void say(){
+        System.out.println("第二次提交");
+    }
 }
