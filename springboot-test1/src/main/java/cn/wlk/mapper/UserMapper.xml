@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.wlk.mapper.UserMapper" >
+
+    <insert id="insert">
+        insert into student (name,stuClass) VALUES(#{0},#{1})
+    </insert>
+    <select id="findByName" resultType="cn.wlk.model.User" parameterType="string">
+        select * from student where name = #{name}
+    </select>
+</mapper>
